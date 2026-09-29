@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Self-Checking Artikel Ilmiah 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3c4;--card:#fff;--ink:#2b2140;--pink:#ff7eb6;--blue:#5cc8ff;--green:#5ee0a0;--yellow:#ffd23f;--red:#ff6b6b;--muted:#6b5f85;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a2140;--card:#3a2f57;--ink:#fff8e1;--muted:#c9bde6}}
+:root[data-theme="dark"]{--bg:#2a2140;--card:#3a2f57;--ink:#fff8e1;--muted:#c9bde6}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Comic Sans MS','Trebuchet MS',sans-serif;font-size:16px;
+background-image:radial-gradient(var(--ink) 1.2px,transparent 1.2px);background-size:26px 26px;background-position:0 0}
+body::before{content:"";position:fixed;inset:0;background:var(--bg);opacity:.9;z-index:-1}
+.wrap{max-width:900px;margin:0 auto;padding:14px 14px 90px}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink);padding:16px;margin:18px 0}
+h1,h2,h3{margin:0;font-weight:700}
+.hero{display:flex;gap:14px;align-items:center;background:var(--pink);flex-wrap:wrap}
+.hero h1{font-size:clamp(24px,6vw,38px);line-height:1.1;color:#2b2140;text-shadow:2px 2px 0 #fff}
+.hero p{margin:6px 0 0;color:#2b2140}
+.tag{display:inline-block;background:var(--yellow);color:#2b2140;border:3px solid var(--ink);border-radius:99px;padding:2px 12px;font-weight:600;font-size:13px;transform:rotate(-2deg)}
+.mascot{width:110px;flex:none;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(3deg)}}
+@media (prefers-reduced-motion:reduce){.mascot,.pop{animation:none!important}}
+.btn{font:inherit;font-weight:600;color:#2b2140;background:var(--yellow);border:3px solid var(--ink);border-radius:14px;padding:8px 14px;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.btn.b{background:var(--blue)}.btn.g{background:var(--green)}.btn.p{background:var(--pink)}.btn.w{background:#fff}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{border:3px solid var(--ink);border-radius:99px;padding:2px 12px;font-weight:600;font-size:14px;color:#2b2140}
+.c-s{background:var(--green)}.c-p{background:var(--yellow)}.c-t{background:var(--blue)}
+label{display:block;font-weight:600;font-size:14px;margin:0 0 4px}
+input,textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--card);border:3px solid var(--ink);border-radius:12px;padding:8px 10px}
+input:focus,textarea:focus{outline:3px solid var(--blue);outline-offset:1px}
+textarea{resize:vertical;min-height:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+.sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sec-h .ic{font-size:26px;background:var(--yellow);border:3px solid var(--ink);border-radius:50%;width:46px;height:46px;display:grid;place-items:center;flex:none}
+.sec-h h2{font-size:21px}
+.sec-h small{color:var(--muted);font-weight:500;margin-left:auto}
+.item{border:3px dashed var(--ink);border-radius:16px;padding:12px;margin-top:12px;background:var(--card);transition:background .2s}
+.item.s{background:color-mix(in srgb,var(--green) 28%,var(--card))}
+.item.p{background:color-mix(in srgb,var(--yellow) 32%,var(--card))}
+.item.t{background:color-mix(in srgb,var(--blue) 28%,var(--card))}
+.item .top{display:flex;gap:10px;align-items:flex-start}
+.num{background:var(--pink);color:#2b2140;border:3px solid var(--ink);border-radius:12px;min-width:42px;text-align:center;font-weight:700;padding:2px 0;flex:none}
+.q{font-weight:500;flex:1}
+.hint{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+.seg{display:flex;gap:8px;margin:10px 0 8px;flex-wrap:wrap}
+.seg button{flex:1;min-width:70px;font:inherit;font-weight:700;color:#2b2140;background:#fff;border:3px solid var(--ink);border-radius:12px;padding:6px;cursor:pointer;box-shadow:2px 2px 0 var(--ink)}
+.seg button.on[data-v=S]{background:var(--green);transform:translateY(2px);box-shadow:0 0 0 var(--ink)}
+.seg button.on[data-v=P]{background:var(--yellow);transform:translateY(2px);box-shadow:0 0 0 var(--ink)}
+.seg button.on[data-v=TB]{background:var(--blue);transform:translateY(2px);box-shadow:0 0 0 var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:560px){.two{grid-template-columns:1fr}.mascot{width:80px}}
+.big{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.stat{flex:1;min-width:150px;border:3px solid var(--ink);border-radius:16px;padding:10px;text-align:center;background:var(--blue);color:#2b2140;box-shadow:3px 3px 0 var(--ink)}
+.stat b{font-size:30px;display:block}
+.bar{height:22px;border:3px solid var(--ink);border-radius:99px;background:#fff;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--pink),var(--pink) 10px,#ff9ccb 10px,#ff9ccb 20px);transition:width .4s}
+.dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:880px;margin:0 auto;background:var(--yellow);color:#2b2140;border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);padding:8px 12px;display:flex;gap:10px;align-items:center;z-index:5}
+.dock .bar{flex:1}.dock b{white-space:nowrap}
+table{width:100%;border-collapse:collapse}
+.scroll{overflow-x:auto}
+th,td{border:3px solid var(--ink);padding:6px;text-align:left;vertical-align:top}
+th{background:var(--pink);color:#2b2140}
+.decide{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.decide button{flex:1;min-width:160px;font-size:18px;padding:14px}
+.decide .on{outline:4px solid var(--ink);outline-offset:3px}
+pre{white-space:pre-wrap;background:var(--bg);border:3px solid var(--ink);border-radius:14px;padding:12px;font:14px/1.5 'Fredoka',monospace;margin:10px 0 0}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+.res{font-weight:700;font-size:20px}
+.ok{color:#0a9a55}.no{color:#d63a3a}
+@media print{.dock,.noprint,.mascot{display:none!important}body{background:#fff}.card{box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="card hero">
+<svg class="mascot" viewBox="0 0 120 130" aria-hidden="true">
+<rect x="14" y="10" width="92" height="104" rx="20" fill="#fff" stroke="#2b2140" stroke-width="5"/>
+<rect x="30" y="0" width="60" height="22" rx="8" fill="#ffd23f" stroke="#2b2140" stroke-width="5"/>
+<circle cx="45" cy="55" r="15" fill="#fff" stroke="#2b2140" stroke-width="5"/><circle cx="78" cy="55" r="15" fill="#fff" stroke="#2b2140" stroke-width="5"/>
+<circle cx="48" cy="57" r="6" fill="#2b2140"/><circle cx="75" cy="57" r="6" fill="#2b2140"/>
+<circle cx="50" cy="54" r="2" fill="#fff"/><circle cx="77" cy="54" r="2" fill="#fff"/>
+<path d="M44 84q17 20 34 0" fill="#ff7eb6" stroke="#2b2140" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="28" cy="76" r="7" fill="#ff7eb6" opacity=".7"/><circle cx="96" cy="76" r="7" fill="#ff7eb6" opacity=".7"/>
+<path d="M100 100l16 22-22-6z" fill="#5cc8ff" stroke="#2b2140" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+<div style="flex:1;min-width:220px">
+<span class="tag">Alat pemeriksaan penulis · 40 butir</span>
+<h1>Self-Checking Artikel Ilmiah 2026</h1>
+<p>Pilih status tiap butir, tulis bukti (halaman/bagian naskah), dan jelaskan alasannya. Ada komponen saja belum cukup, mutu isinya juga harus memadai!</p>
+<div class="legend"><span class="chip c-s">S · sesuai</span><span class="chip c-p">P · perlu perbaikan</span><span class="chip c-t">TB · tidak berlaku</span></div>
+<div class="row noprint" style="margin-top:12px">
+<button class="btn g" id="demo">✨ Muat contoh isian</button>
+<button class="btn w" id="clear">🧹 Kosongkan</button>
+<button class="btn b" id="theme">🌓 Tema</button>
+</div>
+</div>
+</header>
+
+<section class="card">
+<div class="sec-h"><div class="ic">🪪</div><h2>Identitas naskah</h2></div>
+<div class="grid" id="idGrid"></div>
+</section>
+
+<section class="card">
+<div class="sec-h"><div class="ic">🧮</div><h2>Perhitungan rujukan</h2></div>
+<p style="margin:0;color:var(--muted)">Dipakai untuk butir 25 dan 26. Satu sumber bisa sekaligus primer dan mutakhir; kedua proporsi dihitung terpisah.</p>
+<div class="grid" id="refGrid"></div>
+<div class="big">
+<div class="stat" style="background:var(--pink)">F.7 · Primer (P ÷ N)<b id="f7">–</b><span id="f7c"></span></div>
+<div class="stat" style="background:var(--green)">F.8 · Mutakhir (M ÷ N)<b id="f8">–</b><span id="f8c"></span></div>
+</div>
+<p class="note">Kategori tertinggi F.7: N ≥ 15 dan P/N &gt; 80%. Kategori tertinggi F.8: M/N &gt; 80%. Contoh: 17 dari 20 = 85% ✅; 16 dari 20 = 80% ❌ (belum lebih dari 80%). Pastikan rentang 10 tahun mengikuti acuan penilaian jurnal.</p>
+</section>
+
+<div id="sections"></div>
+
+<section class="card">
+<div class="sec-h"><div class="ic">📌</div><h2>Konfirmasi saat artikel terbit</h2></div>
+<p style="margin:0">Diperiksa bersama editor. Jangan mengarang DOI, tanggal, atau lisensi pada tahap pengajuan. Bagian ini tidak dihitung dalam 40 butir.</p>
+</section>
+
+<section class="card">
+<div class="sec-h"><div class="ic">🛠️</div><h2>Daftar perbaikan</h2><button class="btn p noprint" id="addFix" style="margin-left:auto">➕ Tambah baris</button></div>
+<p style="margin:0 0 10px;color:var(--muted)">Butir berstatus P dan TB tanpa alasan masuk otomatis. Isi penanggung jawab dan target di setiap baris.</p>
+<div class="scroll"><table><thead><tr><th>No</th><th>Perbaikan yang diperlukan</th><th>Penanggung jawab &amp; target</th><th class="noprint"></th></tr></thead><tbody id="fixBody"></tbody></table></div>
+</section>
+
+<section class="card">
+<div class="sec-h"><div class="ic">🚦</div><h2>Status kesiapan</h2></div>
+<div class="decide noprint">
+<button class="btn g" data-d="Siap diajukan">🚀 Siap diajukan</button>
+<button class="btn p" data-d="Perbaikan dahulu">🔧 Perbaikan dahulu</button>
+</div>
+<p id="hint" class="note"></p>
+</section>
+
+<section class="card">
+<div class="sec-h"><div class="ic">📄</div><h2>Laporan pemeriksaan</h2></div>
+<div class="row noprint"><button class="btn b" id="print">🖨️ Cetak / Simpan PDF</button><button class="btn g" id="copy">📋 Salin laporan</button></div>
+<p style="margin:10px 0 0;color:var(--muted)">Teks ini bisa ditempel ke Word, surel, atau catatan revisi.</p>
+<pre id="report"></pre>
+<p class="note">Alat pemeriksaan penulis, bukan formulir nilai akreditasi. Butir 25–26 memeriksa target kategori nilai, bukan jaminan penerimaan artikel. Daftar butir dalam versi ini adalah rumusan umum; cocokkan dengan Keputusan Dirjen No. 374/DST/D.D1/HM.01.01/2026 sebelum dipakai resmi. Isian tersimpan di peramban ini saja.</p>
+</section>
+</div>
+
+<div class="dock"><b id="dtxt">0/40</b><div class="bar"><i id="dbar"></i></div><b id="drec">0S·0P·0TB</b></div>
+
+<script>
+const SECS=[
+["📰","Judul & Abstrak",[
+"Judul spesifik, ringkas, dan mencerminkan isi serta variabel utama.",
+"Abstrak memuat latar, tujuan, metode, hasil, dan simpulan.",
+"Abstrak bahasa Indonesia dan Inggris konsisten serta bermutu.",
+"Kata kunci relevan dan sesuai isi naskah.",
+"Naskah sesuai ruang lingkup dan templat jurnal tujuan."]],
+["🔍","Pendahuluan",[
+"Latar belakang masalah jelas dan didukung data atau fakta.",
+"Kajian pustaka relevan dan menunjukkan celah penelitian.",
+"Kebaruan (novelty) dinyatakan tegas dan dapat dibuktikan.",
+"Tujuan atau pertanyaan penelitian dirumuskan jelas.",
+"Kontribusi terhadap bidang ilmu tergambar."]],
+["🧪","Metode",[
+"Desain penelitian sesuai tujuan dan diuraikan jelas.",
+"Populasi, sampel, atau subjek dan teknik pengambilannya dijelaskan.",
+"Instrumen, bahan, dan prosedur dapat direplikasi.",
+"Teknik analisis data tepat dan disebutkan rinci.",
+"Keabsahan atau validitas dan reliabilitas data dijelaskan."]],
+["📊","Hasil & Pembahasan",[
+"Hasil disajikan runtut dan menjawab tujuan penelitian.",
+"Tabel dan gambar jelas, bernomor, berjudul, dan dirujuk di teks.",
+"Pembahasan menafsirkan hasil, bukan hanya mengulang data.",
+"Hasil dibandingkan dengan penelitian terdahulu.",
+"Keterbatasan penelitian diakui."]],
+["🏁","Simpulan",[
+"Simpulan menjawab tujuan penelitian.",
+"Simpulan didukung data, tanpa klaim berlebihan.",
+"Implikasi atau saran tindak lanjut relevan.",
+"Tidak ada informasi baru di simpulan."]],
+["📚","Rujukan",[
+"Proporsi rujukan primer (jurnal, laporan penelitian) memenuhi target F.7.",
+"Proporsi rujukan mutakhir (10 tahun terakhir) memenuhi target F.8.",
+"Setiap sitasi di teks ada di daftar pustaka, dan sebaliknya.",
+"Gaya sitasi konsisten sesuai selingkung jurnal.",
+"Rujukan akurat dan dapat ditelusuri (DOI atau tautan).",
+"Rujukan relevan dengan topik, bukan sekadar pelengkap."]],
+["✍️","Bahasa & Tata Tulis",[
+"Bahasa baku, efektif, dan mudah dipahami.",
+"Istilah asing dan singkatan konsisten serta dijelaskan.",
+"Struktur paragraf koheren dan logis antarbagian.",
+"Format naskah sesuai templat (huruf, spasi, margin).",
+"Naskah bebas kesalahan ketik dan tanda baca yang mengganggu."]],
+["🛡️","Etika & Kelengkapan",[
+"Naskah orisinal; hasil cek kemiripan (similarity) aman.",
+"Tidak diajukan atau diterbitkan di jurnal lain.",
+"Persetujuan etik atau izin penelitian dinyatakan jika perlu.",
+"Kontribusi penulis, pendanaan, dan konflik kepentingan dinyatakan.",
+"Penggunaan alat bantu AI, jika ada, diungkapkan secara jujur."]]
+];
+const ITEMS=[];SECS.forEach((s,si)=>s[2].forEach(t=>ITEMS.push({sec:si,t})));
+const IDF=[["judul","Judul naskah"],["jurnal","Jurnal tujuan"],["penulis","Penulis pemeriksa"],["versi","Versi naskah"],["tgl","Tanggal pemeriksaan","date"]];
+const RF=[["N","Total rujukan (N)"],["P","Rujukan primer (P)"],["M","Terbit 10 tahun terakhir (M)"],["thn","Tahun acuan"],["dari","Rentang dari"],["sampai","Rentang sampai"]];
+const KEY="selfcheck-kisno-cartoon-v1";
+let S={id:{},ref:{},it:{},fix:[],dec:""};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function load(){try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+
+function build(){
+ $("idGrid").innerHTML=IDF.map(([k,l,t])=>`<div><label>${l}</label><input data-g="id" data-k="${k}" type="${t||"text"}"></div>`).join("");
+ $("refGrid").innerHTML=RF.map(([k,l])=>`<div><label>${l}</label><input data-g="ref" data-k="${k}" type="number" min="0" inputmode="numeric"></div>`).join("");
+ let h="",n=0;
+ SECS.forEach((s,si)=>{
+  h+=`<section class="card"><div class="sec-h"><div class="ic">${s[0]}</div><h2>${String.fromCharCode(65+si)}. ${s[1]}</h2><small id="sc${si}"></small></div>`;
+  s[2].forEach(()=>{n++;const i=n;
+   h+=`<div class="item" id="it${i}"><div class="top"><div class="num">${i}</div><div class="q">${esc(ITEMS[i-1].t)}${i==25||i==26?`<span class="hint" id="hh${i}"></span>`:""}</div></div>
+   <div class="seg" data-i="${i}"><button data-v="S">S</button><button data-v="P">P</button><button data-v="TB">TB</button></div>
+   <div class="two"><div><label>Bukti (hlm./bagian)</label><textarea data-i="${i}" data-f="e" rows="1"></textarea></div><div><label>Alasan / catatan</label><textarea data-i="${i}" data-f="r" rows="1"></textarea></div></div></div>`;});
+  h+=`</section>`;});
+ $("sections").innerHTML=h;
+}
+function fill(){
+ document.querySelectorAll("[data-g]").forEach(e=>e.value=(S[e.dataset.g]||{})[e.dataset.k]??"");
+ document.querySelectorAll("textarea[data-i]").forEach(e=>e.value=(S.it[e.dataset.i]||{})[e.dataset.f]||"");
+ renderFix();refresh();
+}
+const pct=(a,b)=>b>0?a/b*100:null;
+function calc(){
+ const N=+S.ref.N||0,P=+S.ref.P||0,M=+S.ref.M||0;
+ const f7=pct(P,N),f8=pct(M,N);
+ const ok7=N>=15&&f7>80,ok8=f8>80;
+ return {N,f7,f8,ok7,ok8};
+}
+function refresh(){
+ const c=calc();
+ $("f7").textContent=c.f7==null?"–":c.f7.toFixed(1)+"%";
+ $("f8").textContent=c.f8==null?"–":c.f8.toFixed(1)+"%";
+ $("f7c").textContent=c.f7==null?"":(c.ok7?"🎉 Kategori tertinggi":"Belum kategori tertinggi");
+ $("f8c").textContent=c.f8==null?"":(c.ok8?"🎉 Kategori tertinggi":"Belum kategori tertinggi");
+ $("hh25").innerHTML=c.f7==null?"":`Hasil hitung: <b class="${c.ok7?"ok":"no"}">${c.f7.toFixed(1)}%</b> ${c.ok7?"✅":"❌"}`;
+ $("hh26").innerHTML=c.f8==null?"":`Hasil hitung: <b class="${c.ok8?"ok":"no"}">${c.f8.toFixed(1)}%</b> ${c.ok8?"✅":"❌"}`;
+ let s=0,p=0,t=0;
+ ITEMS.forEach((_,k)=>{const i=k+1,v=(S.it[i]||{}).v,el=$("it"+i);
+  el.className="item"+(v?" "+(v=="S"?"s":v=="P"?"p":"t"):"");
+  el.querySelectorAll(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));
+  if(v=="S")s++;else if(v=="P")p++;else if(v=="TB")t++;});
+ const d=s+p+t;
+ SECS.forEach((sc,si)=>{let a=0,b=0;ITEMS.forEach((x,k)=>{if(x.sec==si){b++;if((S.it[k+1]||{}).v)a++}});$("sc"+si).textContent=a+"/"+b});
+ $("dtxt").textContent=d+"/40";$("dbar").style.width=d/40*100+"%";$("drec").textContent=`${s}S·${p}P·${t}TB`;
+ $("hint").textContent=d<40?`Masih ${40-d} butir belum terisi. Lengkapi dulu ya!`:(p>0?`Ada ${p} butir P, sebaiknya perbaiki dulu.`:"Semua butir terisi tanpa P. Mantap!");
+ document.querySelectorAll(".decide button").forEach(b=>b.classList.toggle("on",b.dataset.d==S.dec));
+ autoFix();report();
+}
+function autoFix(){
+ const auto=[];
+ ITEMS.forEach((x,k)=>{const i=k+1,o=S.it[i]||{};
+  if(o.v=="P"||(o.v=="TB"&&!(o.r||"").trim()))auto.push({a:1,i,txt:`Butir ${i}: ${x.t}${o.r?" — "+o.r:""}${o.v=="TB"?" (TB belum beralasan)":""}`});});
+ const old=Object.fromEntries((S.fix||[]).filter(f=>f.a).map(f=>[f.i,f]));
+ const man=(S.fix||[]).filter(f=>!f.a);
+ S.fix=auto.map(a=>Object.assign(a,{pj:(old[a.i]||{}).pj||""})).concat(man);
+ renderFix();save();
+}
+function renderFix(){
+ const b=$("fixBody");if(!b)return;
+ if(document.activeElement&&b.contains(document.activeElement))return;
+ b.innerHTML=(S.fix||[]).length?S.fix.map((f,n)=>`<tr><td>${n+1}</td><td>${f.a?esc(f.txt):`<textarea data-fx="${n}" data-f="txt" rows="1">${esc(f.txt)}</textarea>`}</td><td><textarea data-fx="${n}" data-f="pj" rows="1">${esc(f.pj)}</textarea></td><td class="noprint">${f.a?"":`<button class="btn w" data-del="${n}">✖</button>`}</td></tr>`).join(""):`<tr><td colspan="4">Belum ada perbaikan. 🎈</td></tr>`;
+}
+function report(){
+ const c=calc();let s=0,p=0,t=0;
+ ITEMS.forEach((_,k)=>{const v=(S.it[k+1]||{}).v;v=="S"?s++:v=="P"?p++:v=="TB"&&t++});
+ const I=S.id||{};
+ let r=`LAPORAN SELF-CHECKING ARTIKEL ILMIAH\nJudul: ${I.judul||"-"}\nJurnal tujuan: ${I.jurnal||"-"}\nPemeriksa: ${I.penulis||"-"} | Versi: ${I.versi||"-"} | Tanggal: ${I.tgl||"-"}\n\nRekap: S=${s}, P=${p}, TB=${t}, belum=${40-s-p-t}\nRujukan: N=${c.N||"-"}, primer ${c.f7==null?"-":c.f7.toFixed(1)+"%"}, mutakhir ${c.f8==null?"-":c.f8.toFixed(1)+"%"}\nKeputusan: ${S.dec||"belum dipilih"}\n`;
+ if((S.fix||[]).length){r+="\nDaftar perbaikan:\n"+S.fix.map((f,n)=>`${n+1}. ${f.txt||"-"} [PJ/target: ${f.pj||"-"}]`).join("\n")}
+ $("report").textContent=r;
+}
+document.addEventListener("input",e=>{
+ const t=e.target;
+ if(t.dataset.g){(S[t.dataset.g]=S[t.dataset.g]||{})[t.dataset.k]=t.value}
+ else if(t.dataset.i){(S.it[t.dataset.i]=S.it[t.dataset.i]||{})[t.dataset.f]=t.value}
+ else if(t.dataset.fx){S.fix[t.dataset.fx][t.dataset.f]=t.value;save();report();return}
+ else return;
+ save();refresh();
+});
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button");if(!t)return;
+ if(t.parentElement.classList.contains("seg")){const i=t.parentElement.dataset.i;const o=S.it[i]=S.it[i]||{};o.v=o.v==t.dataset.v?"":t.dataset.v;save();refresh()}
+ else if(t.dataset.d){S.dec=t.dataset.d;save();refresh()}
+ else if(t.dataset.del){S.fix.splice(+t.dataset.del,1);renderFix();save();report()}
+});
+$("addFix").onclick=()=>{S.fix.push({a:0,txt:"",pj:""});renderFix();save()};
+$("clear").onclick=()=>{if(confirm("Kosongkan semua isian?")){S={id:{},ref:{},it:{},fix:[],dec:""};save();fill()}};
+$("demo").onclick=()=>{
+ S.id={judul:"Contoh: Pengaruh Media Interaktif terhadap Hasil Belajar",jurnal:"Jurnal Contoh Pendidikan",penulis:"Penulis Contoh",versi:"v1",tgl:new Date().toISOString().slice(0,10)};
+ S.ref={N:20,P:17,M:16,thn:2026,dari:2016,sampai:2026};
+ S.it={};ITEMS.forEach((_,k)=>{const i=k+1;S.it[i]={v:i%9==0?"P":i==13?"TB":"S",e:"Hlm. "+(1+k%8),r:i%9==0?"Perlu diperkuat dan dilengkapi.":i==13?"Penelitian kajian pustaka, tidak ada instrumen.":""}});
+ S.fix=[];S.dec="Perbaikan dahulu";save();fill();
+};
+$("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("report").textContent);$("copy").textContent="✅ Tersalin!"}catch(e){const r=document.createRange();r.selectNode($("report"));getSelection().removeAllRanges();getSelection().addRange(r);$("copy").textContent="Blok teks, tekan salin"}setTimeout(()=>$("copy").textContent="📋 Salin laporan",1800)};
+$("print").onclick=()=>window.print();
+$("theme").onclick=()=>{const r=document.documentElement,d=matchMedia("(prefers-color-scheme:dark)").matches;const cur=r.dataset.theme||(d?"dark":"light");r.dataset.theme=cur=="dark"?"light":"dark"};
+load();build();fill();
+</script>
+</body>
+</html>
